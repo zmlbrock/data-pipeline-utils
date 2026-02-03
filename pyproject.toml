@@ -1,0 +1,20 @@
+[project]
+name = "data-pipeline-utils"
+version = "0.1.0"
+description = "Data pipeline utilities"
+authors = [{name = "zmlbrock"}]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.dependencies]
+pandas = "^2.1.0"
+numpy = ">=1.21.0"
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "mypy"]
+test = ["pytest", "pytest-cov"]

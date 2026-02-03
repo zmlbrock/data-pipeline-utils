@@ -14,6 +14,7 @@ where = ["src"]
 [project.dependencies]
 pandas = "^2.1.0"
 numpy = ">=1.21.0"
+requests = "^2.31.0"
 
 [project.optional-dependencies]
 dev = ["pytest", "black", "mypy"]
